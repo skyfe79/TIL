@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EF1E70B1C88656500F5C4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1E70A1C88656500F5C4CA /* AppDelegate.swift */; };
+		4EF1E70D1C88656500F5C4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1E70C1C88656500F5C4CA /* ViewController.swift */; };
+		4EF1E7101C88656500F5C4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E70E1C88656500F5C4CA /* Main.storyboard */; };
+		4EF1E7121C88656500F5C4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E7111C88656500F5C4CA /* Assets.xcassets */; };
+		4EF1E7151C88656500F5C4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E7131C88656500F5C4CA /* LaunchScreen.storyboard */; };
+		4EF1E71D1C88662D00F5C4CA /* DymicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1E71C1C88662D00F5C4CA /* DymicTableViewCell.swift */; };
+		4EF1E7231C886AC100F5C4CA /* buckingham_palace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E71E1C886AC100F5C4CA /* buckingham_palace.jpg */; };
+		4EF1E7241C886AC100F5C4CA /* eiffel_tower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E71F1C886AC100F5C4CA /* eiffel_tower.jpg */; };
+		4EF1E7251C886AC100F5C4CA /* empire_state_building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E7201C886AC100F5C4CA /* empire_state_building.jpg */; };
+		4EF1E7261C886AC100F5C4CA /* grand_canyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E7211C886AC100F5C4CA /* grand_canyon.jpg */; };
+		4EF1E7271C886AC100F5C4CA /* windsor_castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1E7221C886AC100F5C4CA /* windsor_castle.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EF1E7071C88656500F5C4CA /* DymicTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DymicTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF1E70A1C88656500F5C4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EF1E70C1C88656500F5C4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EF1E70F1C88656500F5C4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EF1E7111C88656500F5C4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EF1E7141C88656500F5C4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4EF1E7161C88656500F5C4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF1E71C1C88662D00F5C4CA /* DymicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DymicTableViewCell.swift; sourceTree = "<group>"; };
+		4EF1E71E1C886AC100F5C4CA /* buckingham_palace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buckingham_palace.jpg; sourceTree = "<group>"; };
+		4EF1E71F1C886AC100F5C4CA /* eiffel_tower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eiffel_tower.jpg; sourceTree = "<group>"; };
+		4EF1E7201C886AC100F5C4CA /* empire_state_building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empire_state_building.jpg; sourceTree = "<group>"; };
+		4EF1E7211C886AC100F5C4CA /* grand_canyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grand_canyon.jpg; sourceTree = "<group>"; };
+		4EF1E7221C886AC100F5C4CA /* windsor_castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windsor_castle.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EF1E7041C88656500F5C4CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EF1E6FE1C88656500F5C4CA = {
+			isa = PBXGroup;
+			children = (
+				4EF1E7091C88656500F5C4CA /* DymicTableViewCell */,
+				4EF1E7081C88656500F5C4CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EF1E7081C88656500F5C4CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EF1E7071C88656500F5C4CA /* DymicTableViewCell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF1E7091C88656500F5C4CA /* DymicTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4EF1E71E1C886AC100F5C4CA /* buckingham_palace.jpg */,
+				4EF1E71F1C886AC100F5C4CA /* eiffel_tower.jpg */,
+				4EF1E7201C886AC100F5C4CA /* empire_state_building.jpg */,
+				4EF1E7211C886AC100F5C4CA /* grand_canyon.jpg */,
+				4EF1E7221C886AC100F5C4CA /* windsor_castle.jpg */,
+				4EF1E70A1C88656500F5C4CA /* AppDelegate.swift */,
+				4EF1E70C1C88656500F5C4CA /* ViewController.swift */,
+				4EF1E71C1C88662D00F5C4CA /* DymicTableViewCell.swift */,
+				4EF1E70E1C88656500F5C4CA /* Main.storyboard */,
+				4EF1E7111C88656500F5C4CA /* Assets.xcassets */,
+				4EF1E7131C88656500F5C4CA /* LaunchScreen.storyboard */,
+				4EF1E7161C88656500F5C4CA /* Info.plist */,
+			);
+			path = DymicTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EF1E7061C88656500F5C4CA /* DymicTableViewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF1E7191C88656500F5C4CA /* Build configuration list for PBXNativeTarget "DymicTableViewCell" */;
+			buildPhases = (
+				4EF1E7031C88656500F5C4CA /* Sources */,
+				4EF1E7041C88656500F5C4CA /* Frameworks */,
+				4EF1E7051C88656500F5C4CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DymicTableViewCell;
+			productName = DymicTableViewCell;
+			productReference = 4EF1E7071C88656500F5C4CA /* DymicTableViewCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EF1E6FF1C88656500F5C4CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = BurtK;
+				TargetAttributes = {
+					4EF1E7061C88656500F5C4CA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 4EF1E7021C88656500F5C4CA /* Build configuration list for PBXProject "DymicTableViewCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EF1E6FE1C88656500F5C4CA;
+			productRefGroup = 4EF1E7081C88656500F5C4CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EF1E7061C88656500F5C4CA /* DymicTableViewCell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EF1E7051C88656500F5C4CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF1E7151C88656500F5C4CA /* LaunchScreen.storyboard in Resources */,
+				4EF1E7261C886AC100F5C4CA /* grand_canyon.jpg in Resources */,
+				4EF1E7271C886AC100F5C4CA /* windsor_castle.jpg in Resources */,
+				4EF1E7251C886AC100F5C4CA /* empire_state_building.jpg in Resources */,
+				4EF1E7121C88656500F5C4CA /* Assets.xcassets in Resources */,
+				4EF1E7231C886AC100F5C4CA /* buckingham_palace.jpg in Resources */,
+				4EF1E7241C886AC100F5C4CA /* eiffel_tower.jpg in Resources */,
+				4EF1E7101C88656500F5C4CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EF1E7031C88656500F5C4CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF1E70D1C88656500F5C4CA /* ViewController.swift in Sources */,
+				4EF1E71D1C88662D00F5C4CA /* DymicTableViewCell.swift in Sources */,
+				4EF1E70B1C88656500F5C4CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4EF1E70E1C88656500F5C4CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EF1E70F1C88656500F5C4CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4EF1E7131C88656500F5C4CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EF1E7141C88656500F5C4CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EF1E7171C88656500F5C4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EF1E7181C88656500F5C4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EF1E71A1C88656500F5C4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DymicTableViewCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.pe.burt.ios.DymicTableViewCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4EF1E71B1C88656500F5C4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DymicTableViewCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.pe.burt.ios.DymicTableViewCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EF1E7021C88656500F5C4CA /* Build configuration list for PBXProject "DymicTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF1E7171C88656500F5C4CA /* Debug */,
+				4EF1E7181C88656500F5C4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF1E7191C88656500F5C4CA /* Build configuration list for PBXNativeTarget "DymicTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF1E71A1C88656500F5C4CA /* Debug */,
+				4EF1E71B1C88656500F5C4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EF1E6FF1C88656500F5C4CA /* Project object */;
+}
