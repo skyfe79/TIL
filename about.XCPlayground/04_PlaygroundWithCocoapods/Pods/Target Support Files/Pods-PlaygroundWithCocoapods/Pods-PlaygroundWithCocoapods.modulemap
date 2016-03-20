@@ -1,0 +1,6 @@
+framework module Pods_PlaygroundWithCocoapods {
+  umbrella header "Pods-PlaygroundWithCocoapods-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -11,3 +11,14 @@ someView.backgroundColor = UIColor.redColor()
 
 //: Timeline Assistant를 켜야 한다.
 XCPlaygroundPage.currentPage.liveView = someView
+
+
+let outerRect = CGRectInset(someView.frame, -10, -10)
+let toPath = UIBezierPath(ovalInRect: outerRect)
+
+let shape = CAShapeLayer()
+shape.path = toPath.CGPath
+
+someView.layer.mask = shape
+
+
