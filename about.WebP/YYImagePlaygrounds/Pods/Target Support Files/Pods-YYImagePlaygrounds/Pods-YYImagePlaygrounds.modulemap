@@ -1,0 +1,6 @@
+framework module Pods_YYImagePlaygrounds {
+  umbrella header "Pods-YYImagePlaygrounds-umbrella.h"
+
+  export *
+  module * { export * }
+}

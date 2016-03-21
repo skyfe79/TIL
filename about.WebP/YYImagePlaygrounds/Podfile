@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'YYImagePlaygrounds' do
+	pod 'YYImage'
+	pod 'YYImage/WebP'
+end
+
