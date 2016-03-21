@@ -21,7 +21,7 @@ if let decoder = decoder {
         XCPlaygroundPage.currentPage.captureValue(image, withIdentifier: "frame-\(i)-image")
         
         let frameDuration = decoder.frameDurationAtIndex(i)
-        XCPlaygroundPage.currentPage.captureValue(i, withIdentifier: "frame-\(i)-duration")
+        XCPlaygroundPage.currentPage.captureValue(frameDuration, withIdentifier: "frame-\(i)-duration")
     }
         
 }
