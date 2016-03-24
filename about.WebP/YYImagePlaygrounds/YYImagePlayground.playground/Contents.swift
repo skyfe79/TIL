@@ -6,11 +6,12 @@ import XCPlayground
 
 
 //: Decoding WebP
-let path = NSBundle.mainBundle().pathForResource("bored_animation", ofType: "webp")
+let path = NSBundle.mainBundle().pathForResource("c_captain", ofType: "webp")
 let data = NSData(contentsOfFile: path!)!
 
 let decoder = YYImageDecoder(data: data, scale: 2.0)
 let image = decoder?.frameAtIndex(0, decodeForDisplay: true)?.image
+XCPlaygroundPage.currentPage.captureValue(decoder?.frameCount, withIdentifier: "frameCount")
 XCPlaygroundPage.currentPage.captureValue(image, withIdentifier: "frame-0-image")
 
 if let decoder = decoder {

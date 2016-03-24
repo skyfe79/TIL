@@ -196,7 +196,7 @@ NSString *const kGPUImageTransformVertexShaderString = SHADER_STRING
 		else
 		{
 			[self renderToTextureWithVertices:adjustedVertices textureCoordinates:[[self class] textureCoordinatesForRotation:inputRotation]];
-		}
+        }
     }
     
     [self informTargetsAboutNewFrameAtTime:frameTime];
