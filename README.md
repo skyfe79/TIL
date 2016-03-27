@@ -1,2 +1,2 @@
-# TIL-iOS
-Today I learned about iOS
+# TIL
+Today I learned
