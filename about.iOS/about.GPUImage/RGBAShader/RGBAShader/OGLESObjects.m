@@ -7,7 +7,8 @@
 
 #import "OGLESObjects.h"
 #import <GLKit/GLKit.h>
-
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
 // declaration for OGLESMappedTexture
 
 @interface OGLESMappedTexture ()
@@ -183,7 +184,7 @@
                                                           GL_RGBA,
                                                           textureWidth,
                                                           textureHeight,
-                                                          GL_RGBA,
+                                                          GL_BGRA,
                                                           GL_UNSIGNED_BYTE,
                                                           0,
                                                           &textureCoreVideoTextureRef);
