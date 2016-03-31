@@ -15,6 +15,7 @@
 		4E3261901CAB98480061680E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E32618E1CAB98480061680E /* Main.storyboard */; };
 		4E3261921CAB98480061680E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3261911CAB98480061680E /* Assets.xcassets */; };
 		4E3261951CAB98480061680E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3261931CAB98480061680E /* LaunchScreen.storyboard */; };
+		4E35A81A1CACB3B30024DD18 /* GPUImageTempFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A8191CACB3B30024DD18 /* GPUImageTempFilter.m */; };
 		4E4046681CABDBE500C762EF /* GPUImageSpriteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4046671CABDBE500C762EF /* GPUImageSpriteFilter.m */; };
 		84B9BA0533D202FAA49A0100 /* libPods-CustomOutput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C84E3D4FB3D916222C0574C7 /* libPods-CustomOutput.a */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,8 @@
 		4E3261911CAB98480061680E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E3261941CAB98480061680E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E3261961CAB98480061680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E35A8181CACB3B30024DD18 /* GPUImageTempFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageTempFilter.h; sourceTree = "<group>"; };
+		4E35A8191CACB3B30024DD18 /* GPUImageTempFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageTempFilter.m; sourceTree = "<group>"; };
 		4E4046661CABDBE500C762EF /* GPUImageSpriteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageSpriteFilter.h; sourceTree = "<group>"; };
 		4E4046671CABDBE500C762EF /* GPUImageSpriteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageSpriteFilter.m; sourceTree = "<group>"; };
 		C84E3D4FB3D916222C0574C7 /* libPods-CustomOutput.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomOutput.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,8 @@
 			children = (
 				4E1183481CAB9E2000CA81A4 /* GPUImageSpriteOverlayOutput.h */,
 				4E1183491CAB9E2000CA81A4 /* GPUImageSpriteOverlayOutput.m */,
+				4E35A8181CACB3B30024DD18 /* GPUImageTempFilter.h */,
+				4E35A8191CACB3B30024DD18 /* GPUImageTempFilter.m */,
 				4E1183441CAB9C4400CA81A4 /* heart.png */,
 				4E3261881CAB98480061680E /* AppDelegate.h */,
 				4E3261891CAB98480061680E /* AppDelegate.m */,
@@ -240,6 +245,7 @@
 			files = (
 				4E32618D1CAB98480061680E /* ViewController.m in Sources */,
 				4E11834A1CAB9E2000CA81A4 /* GPUImageSpriteOverlayOutput.m in Sources */,
+				4E35A81A1CACB3B30024DD18 /* GPUImageTempFilter.m in Sources */,
 				4E4046681CABDBE500C762EF /* GPUImageSpriteFilter.m in Sources */,
 				4E32618A1CAB98480061680E /* AppDelegate.m in Sources */,
 				4E3261871CAB98480061680E /* main.m in Sources */,
