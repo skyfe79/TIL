@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import <GPUImage/GPUImage.h>
 #import "GPUImageSpriteOverlayOutput.h"
+#import "GPUImageTempFilter.h"
+#import <YYImage/YYImage.h>
+@import GLKit;
 
 @interface ViewController ()
 @property(nonatomic, strong) GPUImageVideoCamera* videoCamera;
@@ -17,13 +20,42 @@
 @property(nonatomic, strong) GPUImageAlphaBlendFilter* final;
 @property(nonatomic, strong) GPUImageMovie* movie;
 @property(nonatomic, strong) GPUImageSpriteOverlayOutput* sprite;
-@property(nonatomic, strong) GPUImageBilateralFilter *filter;
+@property(nonatomic, strong) GPUImageTempFilter *filter;
+
+@property(nonatomic, strong) UIImage *image;
+@property(nonatomic, strong) GLKTextureInfo *textureInfo;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
+
+
+    static const GLfloat squareVertices[] = {
+        -0.5f, -0.5f,
+        0.5f, -0.5f,
+        -0.5f,  0.5f,
+        0.5f,  0.5f,
+    };
+    
+    static const GLfloat spriteTextureCoordinates[] = {
+        0.0f, 0.0f,
+        1.0f, 0.0f,
+        0.0f, 1.0f,
+        1.0f, 1.0f,
+    };
+    
+    [[GPUImageContext sharedImageProcessingContext] useAsCurrentContext];
+    self.image = [UIImage imageNamed:@"heart.png"];
+    CGImageRef cgImage = self.image.CGImage;
+    NSError *err;
+    
+    self.textureInfo = [GLKTextureLoader textureWithCGImage:cgImage
+                                                    options:nil
+                                                      error:&err];
     
     self.videoOut = [[GPUImageView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.videoOut];
@@ -31,31 +63,20 @@
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionFront];
     self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.videoCamera.horizontallyMirrorRearFacingCamera = YES;
-    
-    self.sprite = [[GPUImageSpriteOverlayOutput alloc] initWithSize:CGSizeMake(450, 500)];
-    self.middle = [[GPUImageAlphaBlendFilter alloc] init];
-    self.middle.mix = 0.5f;
-    self.final  = [[GPUImageAlphaBlendFilter alloc] init];
-    self.final.mix = 0.5f;
-    self.filter = [[GPUImageBilateralFilter alloc] init];
-    
-    
-    [self.sprite addTarget:self.middle];
-    [self.videoCamera addTarget:self.middle];
-    [self.videoCamera addTarget:self.final];
-    
-    [self.middle addTarget:self.final];
-    
-    [self.final addTarget:self.videoOut];
-    
-    [self.sprite processData];
-    [self.videoCamera startCameraCapture];
+    self.filter = [[GPUImageTempFilter alloc] init];
     
     __weak ViewController *weakSelf = self;
-    [self.final setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
-        [weakSelf.sprite update:time];
-    }];
+    self.filter.contextUpdateBlock = ^(GLint positionAttribute, GLint textureCoordinateAttribute, GLint inputTextureUniform) {
+        glBindTexture(weakSelf.textureInfo.target, weakSelf.textureInfo.name);
+        glUniform1i(inputTextureUniform, 2);
+        glVertexAttribPointer(positionAttribute, 2, GL_FLOAT, 0, 0, squareVertices);
+        glVertexAttribPointer(textureCoordinateAttribute, 2, GL_FLOAT, 0, 0, spriteTextureCoordinates);
+    };
     
+    [self.videoCamera addTarget:self.filter];
+    [self.filter addTarget:self.videoOut];
+    
+    [self.videoCamera startCameraCapture];
 }
 
 - (void)didReceiveMemoryWarning {

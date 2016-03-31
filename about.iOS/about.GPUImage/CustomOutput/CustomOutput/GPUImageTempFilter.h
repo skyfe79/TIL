@@ -7,7 +7,6 @@
 //
 
 #import "GPUImageFilter.h"
-
 @interface GPUImageTempFilter : GPUImageFilter
-
+@property (nonatomic, copy) void (^contextUpdateBlock)(GLint positionAttribute, GLint textureCoordinateAttribute, GLint inputTextureUniform);
 @end
