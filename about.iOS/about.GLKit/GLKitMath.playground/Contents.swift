@@ -24,3 +24,4 @@ print(NSStringFromGLKMatrix4(GLKMatrix4MakeFromCGAffineTransform(CGAffineTransfo
 
 
 
+print(NSStringFromGLKMatrix4(GLKMatrix4MakeOrtho(0, 480, 0, 640, -1.0, 1.0)))
