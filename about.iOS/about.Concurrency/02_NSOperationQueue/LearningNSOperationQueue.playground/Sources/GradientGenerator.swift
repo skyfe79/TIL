@@ -20,17 +20,28 @@
 * THE SOFTWARE.
 */
 
-import Foundation
+import UIKit
 
-public struct Compressor {
-  public static func loadCompressedFile(path: String) -> NSData? {
-    return NSData(contentsOfArchive: path, compression: .LZMA)
-  }
+public func topAndBottomGradient(size: CGSize, clearLocations: [CGFloat] = [0.35, 0.65], innerIntensity: CGFloat = 0.5) -> UIImage {
   
-  public static func saveDataAsCompressedFile(data: NSData, path: String) -> Bool {
-    guard let compressedData = data.compressedDataUsingCompression(.LZMA) else { return false
-    }
-    print("compressed!")
-    return compressedData.writeToFile(path, atomically: true)
-  }
-} 
+  let context = CGBitmapContextCreate(nil, Int(size.width), Int(size.height), 8, 0, CGColorSpaceCreateDeviceGray(), CGImageAlphaInfo.None.rawValue)
+  
+  let colors = [
+    UIColor.whiteColor(),
+    UIColor(white: innerIntensity, alpha: 1.0),
+    UIColor.blackColor(),
+    UIColor(white: innerIntensity, alpha: 1.0),
+    UIColor.whiteColor()
+    ].map { $0.CGColor }
+  let colorLocations : [CGFloat] = [0, clearLocations[0], (clearLocations[0] + clearLocations[1]) / 2.0, clearLocations[1], 1]
+  
+  let gradient = CGGradientCreateWithColors(CGColorSpaceCreateDeviceGray(), colors, colorLocations)
+  
+  let startPoint = CGPoint(x: 0, y: 0)
+  let endPoint = CGPoint(x: 0, y: size.height)
+  CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, CGGradientDrawingOptions())
+  
+  let cgImage = CGBitmapContextCreateImage(context)
+  
+  return UIImage(CGImage: cgImage!)
+}
